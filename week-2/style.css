@@ -1,0 +1,541 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+
+div.page {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-body.jpg");
+
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: auto;
+
+}
+
+div.header {
+  height: 180px;
+  width: 960px;
+  margin: 0 auto;
+}
+div.header-content {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-search.png");
+  background-repeat: no-repeat;
+  float: right;
+}
+.search {
+  margin-top: 10px;
+  height: 32px;
+}
+.search input {
+  vertical-align: middle;
+}
+.search_input {
+  background-color: rgb(40,0,0);
+  color: #F0AA00;
+  padding: 8px;
+  border: 1px solid #7C0000;
+  border-radius: 3px;
+  margin-right: 5px;
+}
+.social_media {
+  float: right;
+  margin-top: 0.5rem;
+  margin-right: 1rem;
+  color: #fff;
+}
+.social_media a {
+  text-decoration: none;
+}
+
+
+.logo {
+  padding-top: 20px;
+  padding-left: 70px;
+}
+
+/* navigation */
+.navigation {
+  float: right;
+  margin-right: 20px;
+  margin-top: -23px;
+}
+.navigation li {
+  display: inline-block;
+}
+
+.navigation li a.selected {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-main-navigation.png");
+  background-repeat: no-repeat;
+}
+.navigation li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 7px 15px 15px 20px;
+  border-radius: 3px;
+}
+
+
+
+
+div.content {
+  width: 960px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+div.banner-slider {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  height: 250px;
+  padding-left: 130px;
+  padding-top: 10px;
+  width: 830px;
+
+  position: relative;
+
+  /*width: 100%;
+  height: 50%;
+  background-position: 50% 50%;
+  background-size: 100% 100%;*/
+}
+
+div.banner-container {
+  position: absolute;
+  /*display: inline-block;
+  position: relative;*/
+  /*float: left;*/
+  /*padding-left: 330px;
+  padding-top: 10px;*/
+}
+
+
+
+/*.slider {
+
+}
+.slider li {
+  /*width: 830px;
+  height: 250px;
+  overflow: hidden;*/
+
+.slider li img {
+  border: 1px solid #fff;
+  /*width: 630px;*/
+}
+
+
+.prev-button {
+  /*position: absolute; /*相對位置依照banner-slider*/
+  /*height: 39px;
+  width: 51px;
+  left:0;
+  top: 0;*/
+}
+
+.prev-button a {
+  /*display: block;*/
+  position: absolute;
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/btn-prev.png");
+  background-repeat: no-repeat;
+  text-decoration: none;
+  color: transparent;
+
+  height: 39px;
+  width: 51px;
+  left: 60px;
+  top: 200px;
+}
+
+.next-button {
+  /*position: absolute;
+  height: 39px;
+  width: 51px;
+  right: 0px;*/
+  /*left: 60px;
+  top: 200px;*/
+}
+.next-button a {
+  /*display: block;*/
+  position: absolute;
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/btn-next.png");
+  background-repeat: no-repeat;
+  width: 51px;
+  height: 39px;
+  text-decoration: none;
+  color: transparent;
+  left: 780px;
+  top: 200px;
+  /*left: 0;
+  top: 0;*/
+  /*bottom: -20;
+  right: -30px;*/
+  /*left: 60px;
+  top: 200px;*/
+}
+
+.bubble {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-bubble.png");
+  background-repeat: no-repeat;
+  position: absolute; /*定位於banner-container*/
+
+  width: 294px;
+  height: 209px;
+  right: -190px;
+  top: 0;
+
+}
+
+h2.post_title {
+  margin-top: 18px;
+  margin-right: 30px;
+  text-align: right;
+}
+h2.post_title a {
+  text-decoration: none;
+  color: #680000;
+  font-size: 22px;
+}
+div.bubble p.post_brief {
+  font-size: 13px;
+  letter-spacing: 0.1px;
+  padding-top: 3px;
+  padding-left: 30px;
+  width: 230px;
+  text-align: right;
+}
+
+div.bubble .post_info {
+  text-align: right;
+  width: 230px;
+  margin-left: 30px;
+  margin-top: 2px;
+  padding-top: 2px;
+  font-size: 12px;
+  border-top: 1px solid #FFC000;
+  color: #969696;
+  font-family: Tahoma, Geneva, sans-serif;
+}
+
+div.post_info a {
+  text-decoration: none;
+  color: #969696;
+}
+
+div.bubble .post_comments {
+  width: 65px;
+  height: 40px;
+  float: right;
+  text-align: center;
+  margin-top: 15px;
+  margin-right: 45px;
+}
+
+div.number a {
+  color: #fff;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+div.bubble .post_comments .comments a {
+  color: #F2AA00;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+
+.content_wrapper {
+  overflow: hidden;
+  width: 910px;
+  background-color: #fff;
+  margin: 20px auto;
+  /*float: left;*/
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+  padding-bottom: 20px;
+  margin-left: 10px;
+}
+
+div.post {
+  display: inline-flex;
+  padding: 10px 0;
+  position: relative;
+
+  /*position: relative;
+  display: inline-block;*/
+  /*width: 450px;*/
+  /*display: inline-block;
+  position: relative;
+  width: 500px;*/
+}
+
+div.post a {
+  width: 228px;
+  height: 228px;
+}
+
+div.post img {
+  border: 1px solid #F2AA00;
+}
+
+div.post h2 {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 320px;
+  background-color: #F2AA00;
+  text-align: left;
+  padding-left: 5px;
+}
+
+div.metadata {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 280px;
+  background-color: #fff;
+  border: 1px solid #F2AA00;
+  text-align: left;
+  /*font-size: 4px;*/
+  word-spacing: 0.5px;
+  padding-left: 5px;
+}
+
+div.metadata a {
+    font-size: 4px;
+  text-align: left;
+  text-decoration: none;
+  color: #000;
+}
+
+div.post_content {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-post-content.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  height: 228px;
+  width: 210px;
+  z-index: 2;
+  /*padding-left: 20px;
+  box-sizing: border-box;*/
+}
+
+div.post_content .post_breif {
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: 13px;
+  text-align: right;
+  color: #fff;
+  width: 150px;
+  word-spacing:1px;
+}
+
+
+div.post_content .post_info {
+  font-size: 13px;
+  color: grey;
+  text-decoration: overline;
+}
+
+div.post_commets {
+  width: 50px;
+  margin-top: 30px;
+  margin-left: 56px;
+}
+
+div.number {
+  color: #fff;
+  font-size: 12px;
+}
+
+div.comment {
+  color: #F2AA00;
+  font-size: 12px;
+}
+
+.content_page_curl {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/content-page-curl.jpg");
+  width: 74px;
+  height: 44px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+
+/*
+** Footer**
+*/
+
+div.footer {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-footer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 300px;
+  /*margin: 0 auto;
+  padding: 100px 0;*/
+}
+
+.widget {
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.widget ul {
+  border: 1px solid #252525;
+  background-color: rgba(26,26,26,.5);
+  border-radius: 5px;
+  width: 200px;
+  min-height: 170px;
+  color: #fff;
+  padding: 20px 10px 20px 0;
+  margin-top: 10px;
+  font-size: 13px;
+}
+.tab {
+  border: 1px solid #252525;
+  background-color: rgba(26,26,26,.5);
+  border-radius: 5px;
+  width: 400px;
+  min-height: 170px;
+  color: #fff;
+  padding: 10px 10px 20px 10px;
+}
+
+.widget li {
+  list-style: none;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.widget ul li a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 20px;
+}
+.widget ul li a:hover {
+  color: #DC0000;
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/arrow.png");
+  background-position: 0px 3px;
+  background-repeat: no-repeat;
+}
+
+.widget h3 {
+  color: #F2AA00;
+  font-size: 15px;
+  padding-left: 10px;
+}
+
+div.widget_curl {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/widget-curl.jpg");
+  width: 46px;
+  height: 33px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+.widget3_title {
+  height: 27px;
+  position: relative;
+}
+.widget3_title li {
+  margin-right: 10px;
+  /*position: absolute;*/
+  display: inline-block;
+  height: 27px;
+}
+.widget3_title li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 15px;
+  display: inline-flex;
+}
+.widget3_title li a:hover {
+  color: #F2AA00;
+}
+.widget3_title li.active {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/tab-arrow.png");
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+.widget3_title li.active a {
+  color: #F2AA00;
+}
+
+
+div.item {
+  padding: 5px 10px 5px 10px;
+  border-radius: 5px;
+}
+div.item:hover {
+  background-color: #000;
+}
+div.item:hover h4 a {
+  color: #F2AA00;
+}
+div.item h4 {
+  margin-bottom: 3px;
+}
+div.item h4 a{
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  font-size: 14px;
+}
+div.item h4 a:hover {
+  color: #F2AA00;
+}
+
+div.item p {
+  color: grey;
+  font-size: 10px;
+}
+
+
+/*
+
+
+
+ul {
+  list-style: none;
+}
+
+
+
+
+
+div.banner-slider {
+  background-image: url("http://nettuts.s3.amazonaws.com/947_comicastic/Comicastic/images/bg-banner.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+
+
+}*/
+
+
+/*@media only screen and (max-width: 960px) {
+  div.banner-slider {
+    width: 100%;
+    height: 50%;
+    background-position: 50% 50%;
+    background-size: 100% 100%;
+  }
+  div.banner-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .slider li img {
+    width: 80%;
+    height: auto;
+  }
+
+}*/
