@@ -24,44 +24,47 @@ html, body {
 }
 
 img {
-  width: 1600px;
-	height: auto;
+
 }
 
 .section {
-  /*width: 100%;
-  height: 100%;
-  position: absolute;*/
-  /*top: 0;
+
+  /*width: 90%;
+  height: 90%;*/
+  /*position: absolute;
+  top: 0;
   left: 0;
   display: block;*/
 }
 
-/*.section#p1 {
+.section#p1 {
   background-image: url("images/bg1.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 
 .section#p2 {
   background-image: url("images/bg2.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .section#p3 {
   background-image: url("images/bg3.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .section#p4 {
   background-image: url("images/bg4.jpg");
-
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .section#p5 {
   background-image: url("images/bg5.jpg");
-
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
 }
 .section#p6 {
   background-image: url("images/bg6.jpg");
-
-}*/
+  /*background-size: cover;
+  background-repeat: no-repeat;*/
+}

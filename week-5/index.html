@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <title>鬥陣特攻</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="jquery.fullPage.css">
-    <script src="jquery-3.1.1.js"></script>
-    <script src="jquery.fullPage.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="jquery.fullPage.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" src="jquery.fullPage.js"></script>
 
   </head>
   <body>
@@ -15,29 +15,38 @@
 
     </div> -->
     <div id="wrapper">
-      <div class="section" id="p1">
-        <img src="images/bg1.jpg"/>
+      <div class="section" id="p1" data-anchor="slide1">
+        <!-- section1 -->
+        <!-- <img src="images/bg1.jpg"  /> -->
       </div>
-      <div class="section" id="p2">
-        <img src="images/bg2.jpg"/>
+      <div class="section" id="p2" data-anchor="slide2">
+        <!-- section2 -->
+        <!-- <img src="images/bg2.jpg"  /> -->
       </div>
-      <div class="section" id="p3">
-        <img src="images/bg3.jpg"/>
+      <div class="section" id="p3" data-anchor="slide3">
+        <!-- section3 -->
+        <!-- <img src="images/bg3.jpg"  /> -->
       </div>
-      <div class="section" id="p4">
-        <img src="images/bg4.jpg"/>
+      <div class="section" id="p4" data-anchor="slide4">
+        <!-- section4 -->
+        <!-- <img src="images/bg4.jpg"  /> -->
       </div>
-      <div class="section" id="p5">
-        <img src="images/bg5.jpg"/>
+      <div class="section" id="p5" data-anchor="slide5">
+        <!-- section5 -->
+        <!-- <img src="images/bg5.jpg"  /> -->
       </div>
-      <div class="section" id="p6">
-        <img src="images/bg6.jpg"/>
+      <div class="section" id="p6" data-anchor="slide6">
+
+        <!-- <img src="images/bg6.jpg"  /> -->
       </div>
     </div>
 
     <script>
       $(document).ready(function() {
         $("#wrapper").fullpage({
+          scrollingSpeed: 1000,
+          fitToSectionDelay: 500,
+          anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
         });
       });
     </script>
