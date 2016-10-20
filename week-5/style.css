@@ -33,16 +33,51 @@ html, body {
   /*background-size: cover;*/
 }
 .navigation {
-  width: 91px;
+  margin: 0 auto;
+  width: 45px;
   height: 215px;
   /*top: 10px;*/
   background-image: url("images/navigation.png");
   background-position: center;
   background-repeat: no-repeat;
   z-index: 999;
-
 }
-
+.navigation ul {
+  /*margin-top: 20px;*/
+  padding-top: 10px;
+  width: 41px;
+}
+.navigation li {
+  list-style: none;
+  right: 0px;
+  width: 41px;
+  height: 27px;
+  margin: 3px auto;
+}
+.navigation ul li a {
+  background-image: url("images/navigation-dot.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin: 0 auto;
+  width: 24px;
+  height: 27px;
+  display: block;
+  transform: scale(0.6);
+}
+.navigation li.active a {
+  transform: scale(1);
+  background-position: 0 -27px;
+}
+.navigation li.active span {
+  background-image: url("images/navigation-sight.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 41px;
+  height: 41px;
+  position: absolute;
+  top: -7px;
+  left: -1px;
+}
 
 #wrapper {
   /*min-height: 100%;*/

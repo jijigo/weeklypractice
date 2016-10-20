@@ -17,7 +17,33 @@
         <!-- <img src="images/shortcut-extra.png" alt="" /> -->
       </div>
       <div class="navigation">
+        <ul id="myMenu">
+          <li data-menuanchor="slide1">
+            <a href="#slide1"></a>
+            <span></span>
+          </li>
+          <li data-menuanchor="slide2">
+            <a href="#slide2"></a>
+            <span></span>
+          </li>
+          <li data-menuanchor="slide3">
+            <a href="#slide3"></a>
+            <span></span>
+          </li>
+          <li data-menuanchor="slide4">
+            <a href="#slide4"></a>
+            <span></span>
+          </li>
+          <li data-menuanchor="slide5">
+            <a href="#slide5"></a>
+            <span></span>
+          </li>
+          <li data-menuanchor="slide6">
+            <a href="#slide6"></a>
+            <span></span>
+          </li>
 
+        </ul>
       </div>
     </div>
 
@@ -51,9 +77,11 @@
     <script>
       $(document).ready(function() {
         $("#wrapper").fullpage({
-          scrollingSpeed: 1000,
+          scrollingSpeed: 700,
           fitToSectionDelay: 500,
-          anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6']
+          anchors:['slide1', 'slide2', 'slide3', 'slide4', 'slide5', 'slide6'],
+          menu: '#myMenu',
+          scrollBar: true
         });
       });
     </script>
