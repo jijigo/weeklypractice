@@ -64,6 +64,7 @@ html, body {
   display: block;
   transform: scale(0.6);
   transition: transform 0.5s;
+  /*transition-delay: 2s;*/
   image-rendering: -webkit-optimize-contrast;
 }
 .navigation li.active a {
@@ -102,32 +103,56 @@ img {
 
 .section#p1 {
   background-image: url("images/bg1.jpg");
-  background-size: cover;
+  /*background-size: cover;*/
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 50px);
 }
 
 .section#p2 {
   background-image: url("images/bg2.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 100px);
 }
 .section#p3 {
   background-image: url("images/bg3.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 150px);
 }
 .section#p4 {
   background-image: url("images/bg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 200px);
 }
 .section#p5 {
   background-image: url("images/bg5.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 250px);
 }
 .section#p6 {
   background-image: url("images/bg6.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: -25px -25px;
+  width: 100%;
+  height: 100%;
+  background-size: calc(100% + 350px);
 }
