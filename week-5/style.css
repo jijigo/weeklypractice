@@ -156,3 +156,37 @@ img {
   height: 100%;
   background-size: calc(100% + 350px);
 }
+
+.inner {
+  border: 1px solid;
+  height: 100%;
+  width: auto;
+  min-width: 1000px;
+  max-width: 1200px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.rect {
+  border: 1px solid;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  background-image: url("images/rect.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  height: 100%;
+  width: 600px;
+  margin-left: -224px;
+
+
+  /*width: auto;
+  max-width: 901px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: 0;
+  width: 900px;*/
+}
